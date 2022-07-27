@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Show Recipe</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center display-4 p-3 mb-2 bg-info text-white"><strong>{{recipe.name}}</strong></h1>
+    </div>
+    <div class="d-flex flex-column justify-content-around text-center">
+        <h4>Under 30 mins? {{recipe.under}}</h4> 
+        <h5><strong><u>Description:</u></strong> {{recipe.description}}</h5>
+        <h5><strong><u>Instructions:</u></strong> {{recipe.instructions}}</h5>
+        <h6>Posted by {{recipe.user.first_name}} {{recipe.user.last_name}}</h6>
+        <h6>Made on {{recipe.date_cooked}}</h6>
+    </div>
+        <a href="/dashboard"><button class="btn btn-info">Back to Dashboard</button></a>
+        <a href="/logout"><button class="btn btn-outline-secondary btn-sm">Logout</button></a>
+</body>
+
+</html>
